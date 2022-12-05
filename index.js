@@ -17,6 +17,12 @@ app.get('/rand', (req, res) => {
     res.render('random', {num})
 })
 
+
+app.get('/r/:subreddit', (req, res) => {    
+    const { subreddit } = req.params
+    res.render('subreddit', { subreddit });
+})
+
 app.listen(8080, () => {    
     console.log('Listening on port 8080');
 })
