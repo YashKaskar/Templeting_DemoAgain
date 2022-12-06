@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Your Random No. <%= num %> </h1>
+    <% if(num % 2 === 0) { %>
+<h2>This is your Even No</h2>
+    <% } else { %>
+<h2>This is your Odd No</h2>
+   <% } %> 
 </body>
 </html>
